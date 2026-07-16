@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+use Illuminate\Database\Eloquent\Relations\HasMany;
+
+class Kriteria extends Model
+{
+    /** @use HasFactory<\Database\Factories\KriteriaFactory> */
+    use HasFactory;
+
+    protected $fillable = [
+        'kode',
+        'nama',
+        'bobot',
+    ];
+
+    public function nilaiWargas(): HasMany
+    {
+        return $this->hasMany(NilaiWarga::class);
+    }
+}

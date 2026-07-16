@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth group" data-layout="two-column" data-content-width="fluid" data-bs-theme="light" data-sidebar-colors="light" data-sidebar="large" data-nav-type="default" dir="ltr" data-colors="default" data-profile-sidebar>
+
+<!-- Mirrored from srbthemes.kcubeinfotech.com/gotpos/html/ltr/auth-two-step-verification-modern.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 31 May 2026 08:12:16 GMT -->
+<head>
+
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Two Step Verification | GotPOS - Bootstrap Admin Dashboard Template</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="GotPOS | Bootstrap Admin Dashboard Template">
+    <meta name="description" content="Get the best admin dashboard template with Bootstrap 5, multiple layouts, RTL/LTR support, dark/light mode, responsive design, and Sass support. Lightweight, easy to customize, and perfect for your next project.">
+    <meta name="keywords" content="bootstrap dashboard, admin template, responsive dashboard, analytics dashboard, e-commerce dashboard, admin dashboard template, bootstrap 5, responsive design, RTL LTR support, dark light mode, sass supported, lightweight, easy to customize, bootstrap">
+    <meta name="author" content="SRBThemes">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#!">
+    <meta property="og:title" content="GotPOS | Bootstrap Admin Dashboard Template">
+    <meta property="og:description" content="Get the best admin dashboard template with Bootstrap 5, multiple layouts, RTL/LTR support, dark/light mode, responsive design, and Sass support. Lightweight, easy to customize, and perfect for your next project.">
+    <meta property="og:image" content="#!">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="#!">
+    <meta property="twitter:title" content="GotPOS | Bootstrap Admin Dashboard Template">
+    <meta property="twitter:description" content="Get the best admin dashboard template with Bootstrap 5, multiple layouts, RTL/LTR support, dark/light mode, responsive design, and Sass support. Lightweight, easy to customize, and perfect for your next project.">
+    <meta property="twitter:image" content="#!">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/favicon-B-3ALmIB.ico">
+
+
+    <!-- Layout JS -->
+    <!-- Bootstrap CSS -->
+    <link href="assets/bootstrap.rtl-B-QkKLS3.css" rel="stylesheet" type="text/css" disabled>
+    <!-- Icons CSS -->
+    <!-- App CSS -->
+    <link href="assets/app.rtl-Jqq4Msv0.css" rel="stylesheet" type="text/css" disabled>
+    <!-- Admin Bundle JS -->
+  <script type="module" crossorigin src="assets/admin.bundle-CBXoUBAg.js"></script>
+  <script type="module" crossorigin src="assets/two-step-verification.init-bjwPZeCh.js"></script>
+  
+  <link rel="stylesheet" crossorigin href="assets/admin-Bly6avC4.css">
+</head>
+
+<body class="sidebar-hidden">
+<div class="auth-wrapper position-relative container-fluid">
+    <div class="row g-0 min-vh-100">
+        <div class="col-12 col-xl-4 d-flex align-items-center justify-content-center bg-body-secondary">
+            <div class="py-12">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <a href="index.html" class="logos">
+                                <img src="assets/main-logo-CWEU2RA-.png" loading="lazy" alt="Logo" class="h-6 px-5 px-md-7 logo-dark">
+                                <img src="assets/logo-white-B_ImY8Qx.png" loading="lazy" alt="Logo White" class="h-6 px-5 px-md-7 logo-light">
+                            </a>
+                        </div>
+                        <div class="card bg-transparent border-0 mb-0">
+                            <div class="p-md-8 card-body">
+                                <h5 class="fs-17 fw-bold text-gradient mb-4 text-uppercase">OTP Verification</h5>
+                                <p class="mb-5 text-muted mb-10">We're sent a code to <span class="text-body fw-medium">lucasethan@gotpos.com</span></p>
+                                <form action="#!">
+                                    <!-- Success Alert -->
+                                    <div id="successAlert" class="alert alert-success alert-dismissible d-none mb-1">
+                                        <span>OTP verified successfully! Redirecting...</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                    <!-- Error Alert -->
+                                    <div id="errorAlert" class="alert alert-danger alert-dismissible d-none mb-1">
+                                        <span>Please enter a complete 6-digit OTP.</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                    <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+                                        <input type="text" class="form-control pattern-input text-center fs-3 fw-bold bg-light rounded p-2 size-14" maxlength="1" pattern="\d*">
+                                        <input type="text" class="form-control pattern-input text-center fs-3 fw-bold bg-light rounded p-2 size-14" maxlength="1" pattern="\d*">
+                                        <input type="text" class="form-control pattern-input text-center fs-3 fw-bold bg-light rounded p-2 size-14" maxlength="1" pattern="\d*">
+                                        <input type="text" class="form-control pattern-input text-center fs-3 fw-bold bg-light rounded p-2 size-14" maxlength="1" pattern="\d*">
+                                        <input type="text" class="form-control pattern-input text-center fs-3 fw-bold bg-light rounded p-2 size-14" maxlength="1" pattern="\d*">
+                                        <input type="text" class="form-control pattern-input text-center fs-3 fw-bold bg-light rounded p-2 size-14" maxlength="1" pattern="\d*">
+                                    </div>
+                                    <div class="mt-5">
+                                        <button id="verifyButton" class="btn btn-primary w-100">Reset Password</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-7 col-xxl-8 my-auto">
+            <div class="py-12 px-4 px-lg-16 px-xxl-28 me-xxl-80">
+                <h2 class="mb-7">Manage Your Business with GotPOS</h2>
+                <p class="text-muted fs-lg mb-12 mb-md-20">Manage sales, inventory & billing from one powerful dashboard.</p>
+                <div class="row g-4 g-md-6">
+                    <div class="col-md-4">
+                        <div class="card border-0 mb-0">
+                            <div class="card-body py-8 text-center">
+                                <img src="assets/bill-Cq_rnEWF.png" alt="Image" class="img-fluid size-12 mb-7 opacity-75">
+                                <h6 class="mb-0 fs-17">Billing</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 mb-0">
+                            <div class="card-body py-8 text-center">
+                                <img src="assets/material-management-BykJPBQR.png" alt="Image" class="img-fluid size-12 mb-7 opacity-75">
+                                <h6 class="mb-0 fs-17">Inventory</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 mb-0">
+                            <div class="card-body py-8 text-center">
+                                <img src="assets/report-ByGbq5p9.png" alt="Image" class="img-fluid size-12 mb-7 opacity-75">
+                                <h6 class="mb-0 fs-17">Reports</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 mb-0">
+                            <div class="card-body py-8 text-center">
+                                <img src="assets/login-QMRl0FID.png" alt="Image" class="img-fluid size-12 mb-7 opacity-75">
+                                <h6 class="mb-0 fs-17">Secure Login</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 mb-0">
+                            <div class="card-body py-8 text-center">
+                                <img src="assets/data-synchronization-B-9lMaG4.png" alt="Image" class="img-fluid size-12 mb-7 opacity-75">
+                                <h6 class="mb-0 fs-17">Cloud Sync</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 mb-0">
+                            <div class="card-body py-8 text-center">
+                                <img src="assets/cash-register-CDt2JMRs.png" alt="Image" class="img-fluid size-12 mb-7 opacity-75">
+                                <h6 class="mb-0 fs-17">Fast POS</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="assets/asa-BLC_yXq6.jpg" alt="Image" class="position-absolute top-0 end-0 h-100 w-28 object-fit-cover d-none d-xl-block">
+</div>
+
+<!-- load your vendor scripts for all pages  -->
+
+</body>
+
+
+<!-- Mirrored from srbthemes.kcubeinfotech.com/gotpos/html/ltr/auth-two-step-verification-modern.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 31 May 2026 08:12:16 GMT -->
+</html>
